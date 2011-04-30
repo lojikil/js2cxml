@@ -20,7 +20,9 @@ Converts JSON objects that look like this:
                         "children": [
                             {
                                 "node": "m:StockName",
-                                "text": "IBM"
+                                "children" : [
+                                    "IBM"
+                                ] 
                             }]
                      }]
             }]
