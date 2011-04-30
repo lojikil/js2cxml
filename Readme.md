@@ -1,26 +1,26 @@
-=== Intro ===
+### Intro ###
 js2cxml: JSON to Canonical(-like) XML.
 
-=== Overview ===
+### Overview ###
 Converts JSON objects that look like this:
 
     {
-        node: "soap:Envelope",
+        "node": "soap:Envelope",
         "@" : {"xmlns:soap":"http://www.w3.org/2003/05/soap-envelope"},
-        children: [
+        "children": [
             {
-                node: "soap:Header"
+                "node": "soap:Header"
             },
             {
-                node: "soap:Body",
-                children: [
+                "node": "soap:Body",
+                "children": [
                     {
-                        node: "m:GetStockPrice",
+                        "node": "m:GetStockPrice",
                         "@" : {"xmlns:m":"http://example.com/stock"}
-                        children: [
+                        "children": [
                             {
-                                node: "m:StockName",
-                                text: "IBM"
+                                "node": "m:StockName",
+                                "text": "IBM"
                             }]
                      }]
             }]
@@ -34,7 +34,7 @@ otherwise. It doesn&apos;t yet output full Canonical XML; it does not delete
 unused XML namespace definitions, for instance.
 
 
-=== License ===
+### License ###
 
 Copyright (c) 2011 by Stefan Edwards
 
