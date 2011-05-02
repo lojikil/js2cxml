@@ -16,7 +16,7 @@ Converts JSON objects that look like this:
                 "children": [
                     {
                         "node": "m:GetStockPrice",
-                        "@" : {"xmlns:m":"http://example.com/stock"}
+                        "@" : {"xmlns:m":"http://example.com/stock"},
                         "children": [
                             {
                                 "node": "m:StockName",
