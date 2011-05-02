@@ -35,6 +35,17 @@ are defined either above or in the tag they are used in, and throws an error
 otherwise. It doesn&apos;t yet output full Canonical XML; it does not delete
 unused XML namespace definitions, for instance.
 
+### Rationale ###
+
+ I needed something that can quickly:
+
+- generate clean XML
+- check that I did not make mistakes with XML QNames
+- could be easily integrated with Nodejs applications
+
+That being said, you probably wouldn't want to use this direct. I'm working on a
+library that sits atop this for programmatically creating XML using this library.
+
 
 ### License ###
 
